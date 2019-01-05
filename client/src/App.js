@@ -7,7 +7,7 @@ import Login from './components/Login';
 import Register from './components/Register';
 import NavBar from './components/NavBar';
 import NoMatch from './components/NoMatch';
-
+  
 class App extends Component {
   render() {
     return (
