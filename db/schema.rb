@@ -53,6 +53,7 @@ ActiveRecord::Schema.define(version: 2019_01_05_175843) do
     t.string "trailer"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "url"
   end
 
 end

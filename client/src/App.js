@@ -9,21 +9,24 @@ import NavBar from './components/NavBar';
 import NoMatch from './components/NoMatch';
 import Reset from './components/Reset';
 import ProtectedRoute from './components/ProtectedRoute';
+import FetchUser from './components/FetchUser';
 
 class App extends Component {
   render() {
     return (
       <div>
         <NavBar />
-        <Container>
-          <Switch>
-            <ProtectedRoute exact path = '/' component = {Home} />
-            <Route exact path = '/login' component = {Login} />
-            <Route exact path = '/register' component = {Register} />
-            <Route exact path = '/reset' component = {Reset} />
-            <Route component = {NoMatch} />
-          </Switch>
-        </Container>
+        <FetchUser>
+          <Container>
+            <Switch>
+              <ProtectedRoute exact path = '/' component = {Home} />
+              <Route exact path = '/login' component = {Login} />
+              <Route exact path = '/register' component = {Register} />
+              <Route exact path = '/reset' component = {Reset} />
+              <Route component = {NoMatch} />
+            </Switch>
+          </Container>
+        </FetchUser>
       </div>
     );
   }
