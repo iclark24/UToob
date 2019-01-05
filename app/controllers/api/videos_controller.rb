@@ -24,8 +24,9 @@ class Api::VideosController < ApplicationController
       render json: @video
     else 
       render json: @video.errors
+    end
   end
-end
+
 
   def destroy
     @video.destroy

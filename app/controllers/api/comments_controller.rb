@@ -21,15 +21,24 @@ class Api::CommentsController < ApplicationController
  end
 
   def update
-    if @comment.update(comment_params)
-      render json: @comment
-    else 
+    if @user.id == @comment.user_id
+      if @comment.update(comment_params)
+        render json: @comment
+      else 
+        render json: @comment.errors
+      end
+    else
       render json: @comment.errors
+    end
   end
-end
+
 
   def destroy
-    @comment.destroy
+    if @user.id == @comment.user_id
+      @comment.destroy
+    else
+      render json: @comment.errors
+    end
   end
 
   private
