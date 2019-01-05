@@ -8,7 +8,7 @@ class MyVideos_test extends React.Component {
   state = { videos: [],};
 
   componentDidMount() {
-    axios.get("/api/my_videos")
+    axios.get("/api/videos")
       .then( res => this.setState({ videos: res.data, }));
   }
 

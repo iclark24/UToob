@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 
 import CommentForm from './CommentForm';
-import { Card, Button, Grid, Segment, GridColumn } from 'semantic-ui-react';
+import { Card, Header, Grid, Segment, GridColumn } from 'semantic-ui-react';
 
 class Video extends React.Component {
   state = { video: {},};
@@ -32,7 +32,7 @@ render(){
   const { url, title, genre, description} = this.state.video
   return(
     <Fragment>
-       <Grid>
+       <Grid centered>
         <Grid.Column width={16}>
           <Iframe url={url}
             width="100%"
@@ -44,8 +44,12 @@ render(){
           >
           </Iframe>
         </Grid.Column>
+        <GridColumn width={14}>
+          <Segment>
+            <Header>{title}</Header>
+          </Segment>
+        </GridColumn>
       </Grid>
-      <GridColumn width={14}/>
     {/* <Comments id={video.id}/> */}
 
 
