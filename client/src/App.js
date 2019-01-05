@@ -10,6 +10,7 @@ import NoMatch from './components/NoMatch';
 import Reset from './components/Reset';
 import ProtectedRoute from './components/ProtectedRoute';
 import FetchUser from './components/FetchUser';
+import VForm from './components/AddVideoForm'
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
           <Container>
             <Switch>
               <Route exact path = '/' component = {Home} />
+              <ProtectedRoute exact path = '/newvideo' component = {VForm} />
               <Route exact path = '/login' component = {Login} />
               <Route exact path = '/register' component = {Register} />
               <Route exact path = '/reset' component = {Reset} />

@@ -15,6 +15,13 @@ class Navbar extends React.Component {
             name="Logout"
             onClick={() => handleLogout(history)}
           />
+          <Link to="/newvideo">
+            <Menu.Item 
+              name="Upload"
+              id="Upload"
+              active={pathname === "/newvideo"}
+            />
+          </Link>
         </Menu.Menu>
       )
     } else {

@@ -1,10 +1,10 @@
 import React from "react";
 import axios from "axios";
-import { Form, Button} from "semantic-ui-react"
+import { Form, Grid, Header,} from "semantic-ui-react"
 
 class AddVideoForm extends React.Component{
   state = { title: "", url: "", genre: "", description: "" }
-
+  
   handleSubmit = (e) => {
     e.preventDefault();
     const video = {...this.state};
@@ -12,60 +12,71 @@ class AddVideoForm extends React.Component{
     .then( res => {
       this.props.history.push(`videos`)
     }) 
-    
-
   }
 
   handleChange = (e) => {
-    const { title, value } = e.target;
+    const { name, value } = e.target;
+      if (name === "url") {
+        let newvalue = value.split("watch?v=")
+        newvalue = newvalue.join("embed/")
+        this.setState({ [name]: newvalue});
+      }
+      else{
     this.setState({ [name]: value});
+      }
     }
 
-    
+    // watch?v=
 
 
 
 
   render() {
-    const { title, genre, description}
+    const { title, genre, description, url} = this.state
     return (
-      <div>
-        <h1> Add Video </h1>
-        <Form onSubmit={this.handleSubmit}>
-          <Form.Group width="equal">
-            <Form.Input
-              name="title"
-              label="Title"
-              placeholder="Title"
-              value={title}
-              onChange={this.handleChange}
-            />
-             <Form.Input
-              name="url"
-              label="url"
-              placeholder="Url"
-              value={url}
-              onChange={this.handleChange}
-            />
-            <Form.Input
-              name="genre"
-              label="Genre"
-              placeholder="Genre"
-              value={genre}
-              onChange={this.handleChange}
-            />
-            <Form.Input
-              name="description"
-              label="Description"
-              placeholder="Description"
-              value={description}
-              onChange={this.handleChange}
-            />
-            
-          </Form.Group>
-          <Form.Button> Submit </Form.Button>
-        </Form>
-      </div>
+      <Grid centered columns="1">
+        <Grid.Column width="6">
+        <Header as="h1"> Add Video </Header>
+
+          <Form onSubmit={this.handleSubmit}>
+              <Form.Input
+                name="title"
+                label="Title"
+                placeholder="Title"
+                value={title}
+                onChange={this.handleChange}
+                required
+                />
+              <Form.Input
+                name="url"
+                label="url"
+                placeholder="Url"
+                value={url}
+                onChange={this.handleChange}
+                required
+                />
+              <Form.Input
+                name="genre"
+                label="Genre"
+                placeholder="Genre"
+                value={genre}
+                onChange={this.handleChange}
+                required
+                />
+              <Form.TextArea
+                autoHeight
+                name="description"
+                label="Description"
+                placeholder="Description"
+                value={description}
+                onChange={this.handleChange}
+                required
+                />
+              
+            <Form.Button> Submit </Form.Button>
+          </Form>
+        </Grid.Column>
+      </Grid>
     )
   }
 }//end of AddVideoForm
