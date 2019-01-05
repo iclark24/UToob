@@ -28,7 +28,6 @@ class Home extends React.Component {
                 allowFullScreen
               >
               </Iframe>
-                <Link to = '/api/video/:id'>Title</Link>
             </Grid.Column>
             { videos.map( video => 
             <Grid.Column width={4}>
@@ -42,7 +41,6 @@ class Home extends React.Component {
                   styles={{paddingBottom: '20px', background: '#ce3740'}}
                   />
               </Link>
-
           </Grid.Column>
               )    
               }

@@ -44,12 +44,10 @@ render(){
           >
           </Iframe>
         </Grid.Column>
-        <GridColumn width={14}>
-          <Segment>
-            <Header>{title}</Header>
-          </Segment>
-        </GridColumn>
       </Grid>
+          <div style = {{width: '1128px', textAlign: 'left', padding: '10px'}}>
+            <Header as = 'h3'>{title}</Header>
+          </div>
     {/* <Comments id={video.id}/> */}
 
 
