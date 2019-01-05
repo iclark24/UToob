@@ -6,13 +6,22 @@ ruby '2.5.1'
 gem 'rails', '~> 5.2.2'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
+<<<<<<< HEAD
+
 gem 'bootsnap', '>= 1.1.0', require: false
+
+=======
+gem 'bootsnap', '>= 1.1.0', require: false
+>>>>>>> 785347fbf9f66dc9a06d58422d5245693db0f8c5
 gem 'devise_token_auth'
 
 group :development, :test do
   gem 'pry'
+<<<<<<< HEAD
+=======
   gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 
+>>>>>>> 785347fbf9f66dc9a06d58422d5245693db0f8c5
 end
 
 group :development do
