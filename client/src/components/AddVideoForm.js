@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import { Form, Grid, Header,} from "semantic-ui-react"
+import { Form, Segment, Header,} from "semantic-ui-react"
 
 class AddVideoForm extends React.Component{
   state = { title: "", url: "", genre: "", description: "" }
@@ -25,57 +25,53 @@ class AddVideoForm extends React.Component{
     this.setState({ [name]: value});
       }
     }
-
-    // watch?v=
     
   render() {
     const { title, genre, description, url} = this.state
     return (
-      <Grid centered columns="1">
-        <Grid.Column width="6">
-        <Header as="h1"> Add Video </Header>
+      <Segment basic>
+      <Header as="h2" textAlign = 'center'> Add Video </Header>
+      <Form onSubmit={this.handleSubmit}>
+          <Form.Input
+            name="title"
+            label="Title"
+            placeholder="Title"
+            value={title}
+            onChange={this.handleChange}
+            required
+            autofocus
+            />
+          <Form.Input
+            name="url"
+            label="url"
+            placeholder="Url"
+            value={url}
+            onChange={this.handleChange}
+            required
+            />
+          <Form.Input
+            name="genre"
+            label="Genre"
+            placeholder="Genre"
+            value={genre}
+            onChange={this.handleChange}
+            required
+            />
+          <Form.TextArea
+            autoHeight
+            name="description"
+            label="Description"
+            placeholder="Description"
+            value={description}
+            onChange={this.handleChange}
+            required
+            />
 
-          <Form onSubmit={this.handleSubmit}>
-              <Form.Input
-                name="title"
-                label="Title"
-                placeholder="Title"
-                value={title}
-                onChange={this.handleChange}
-                required
-                />
-              <Form.Input
-                name="url"
-                label="url"
-                placeholder="Url"
-                value={url}
-                onChange={this.handleChange}
-                required
-                />
-              <Form.Input
-                name="genre"
-                label="Genre"
-                placeholder="Genre"
-                value={genre}
-                onChange={this.handleChange}
-                required
-                />
-              <Form.TextArea
-                autoHeight
-                name="description"
-                label="Description"
-                placeholder="Description"
-                value={description}
-                onChange={this.handleChange}
-                required
-                />
-              
-            <Form.Button> Submit </Form.Button>
-          </Form>
-        </Grid.Column>
-      </Grid>
+        <Form.Button> Submit </Form.Button>
+      </Form>
+            </Segment>
     )
   }
-}//end of AddVideoForm
+}
 
 export default AddVideoForm;
