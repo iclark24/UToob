@@ -5,7 +5,7 @@ class Api::CommentsController < ApplicationController
   before_action :set_user, only: [:create, :update, :destroy]
   
   def index
-    render json: Comment.all
+    render json: @video.comments.all
   end
 
   # def show

@@ -13,6 +13,7 @@ import ProtectedRoute from './components/ProtectedRoute';
 import FetchUser from './components/FetchUser';
 import VForm from './components/AddVideoForm'
 import MyVideos_test from './components/MyVideos_test';
+import Video from './components/Video'
 
 class App extends Component {
   render() {
@@ -23,6 +24,7 @@ class App extends Component {
           <Container style = {{background: '#f6f6f6',}}>
             <Switch>
               <Route exact path = '/' component = {Home} />
+              <Route exact path = '/videos/:id' component = {Video} />
               <ProtectedRoute exact path = '/newvideo' component = {VForm} />
               <Route exact path = '/login' component = {Login} />
               <Route exact path = '/register' component = {Register} />
