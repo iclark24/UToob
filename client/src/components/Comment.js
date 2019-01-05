@@ -1,13 +1,21 @@
 import React from 'react';
 import axios from 'axios';
-import { Segment } from 'semantic-ui-react';
+import { Item } from 'semantic-ui-react';
 
 class Comment extends React.Component {
   state = {comment: [] };
-    this.setState({ comments: })
-
-  
-
+   
+  render() {
+    const { title, body } = this.state.comment;
+    return (
+      <Item>
+        <Item.Header> {title} </Item.Header>
+        <Item.Content> {body} </Item.Content>
+      </Item>
+    )
   }
 
+
 }//end of comment class
+
+export default Comment;
