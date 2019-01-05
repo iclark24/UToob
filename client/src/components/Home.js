@@ -6,7 +6,7 @@ import axios from "axios";
 
 
 class Home extends React.Component {
-  state = { videos: [],};
+  state = { videos: []};
 
   componentDidMount() {
     axios.get("/api/videos")
@@ -14,7 +14,8 @@ class Home extends React.Component {
   }
 
   render() {
-    const { videos, } = this.state;    return (
+    const { videos, } = this.state;
+    return (
       <Segment basic> 
         <Header as = 'h2'>All Videos</Header> 
         <Grid >
@@ -31,15 +32,17 @@ class Home extends React.Component {
             </Grid.Column>
             { videos.map( video => 
             <Grid.Column width={4}>
-              <Link to = {`/videos/${video.id}`} style = {{zIndex: '2'}}>
+              <Link to = {`/videos/${video.id}`} style = {{zIndex: '2', color: 'black'}}>
                 <Iframe url={video.url}
                   key={video.id}
                   width="235px"
                   height="125px"
                   display="initial"
                   position="relative"
-                  styles={{paddingBottom: '20px', background: '#ce3740'}}
+                  // styles={{paddingBottom: '20px', background: '#ce3740'}}
                   />
+                  <br />
+              <p>{video.title}</p>
               </Link>
           </Grid.Column>
               )    
