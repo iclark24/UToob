@@ -23,7 +23,7 @@ class CommentForm extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault();
     const { match: {params: {id, commentId }}, history: {push} } = this.props;
-    if (departmentId) {
+    if (commentId) {
       axios.put(`/api/videos/${id}/comments/${commentId}`, {...this.state})
        .then(res => push (`/videos/${id}`))
     }
@@ -44,7 +44,6 @@ class CommentForm extends React.Component {
               name="title"
               placeholder="Title"
               label="Title"
-              required
               value={title}
               onChange={this.handleChange}
               required
@@ -54,7 +53,7 @@ class CommentForm extends React.Component {
               name="comment"
               label="Comment"
               placeholder="Comment"
-              value={comment}
+              value={body}
               onChange={this.handleChange}
               required
             />
