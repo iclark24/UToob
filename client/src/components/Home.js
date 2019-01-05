@@ -29,7 +29,7 @@ class Home extends React.Component {
                   height="125px"
                   display="initial"
                   position="relative"
-                  styles={{border: '1px solid black', borderRadius: '3px', paddingBottom: '20px', background: '#ce3740'}}
+                  styles={{paddingBottom: '20px', background: '#ce3740'}}
                 />
               </Link>
               <Link to = '/register' style = {{zIndex: '2'}}>
@@ -38,7 +38,7 @@ class Home extends React.Component {
                   height="125px"
                   display="initial"
                   position="relative"
-                  styles={{border: '1px solid black', borderRadius: '3px', paddingBottom: '20px', background: '#ce3740'}}
+                  styles={{paddingBottom: '20px', background: '#ce3740'}}
                 />
               </Link>
             </Grid.Column>
@@ -49,7 +49,7 @@ class Home extends React.Component {
                   height="125px"
                   display="initial"
                   position="relative"
-                  styles={{border: '1px solid black', borderRadius: '3px', paddingBottom: '20px', background: '#ce3740'}}
+                  styles={{paddingBottom: '20px', background: '#ce3740'}}
                 />
               </Link>
               <Link to = '/register' style = {{zIndex: '2'}}>
@@ -58,7 +58,7 @@ class Home extends React.Component {
                   height="125px"
                   display="initial"
                   position="relative"
-                  styles={{border: '1px solid black', borderRadius: '3px', paddingBottom: '20px', background: '#ce3740'}}
+                  styles={{paddingBottom: '20px', background: '#ce3740'}}
                 />
               </Link>
             </Grid.Column>
@@ -71,7 +71,7 @@ class Home extends React.Component {
                   height="125px"
                   display="initial"
                   position="relative"
-                  styles={{border: '1px solid black', borderRadius: '3px', paddingBottom: '20px', background: '#ce3740'}}
+                  styles={{paddingBottom: '20px', background: '#ce3740'}}
                 />
               </Link>
               <Link to = '/register' style = {{zIndex: '2'}}>
@@ -80,27 +80,7 @@ class Home extends React.Component {
                   height="125px"
                   display="initial"
                   position="relative"
-                  styles={{border: '1px solid black', borderRadius: '3px', paddingBottom: '20px', background: '#ce3740'}}
-                />
-              </Link>
-            </Grid.Column>
-            <Grid.Column width={4}>
-              <Link to = '/register' style = {{zIndex: '2'}}>
-                <Iframe url="http://www.youtube.com/embed/xDMP3i36naA"
-                  width="235px"
-                  height="125px"
-                  display="initial"
-                  position="relative"
-                  styles={{border: '1px solid black', borderRadius: '3px', paddingBottom: '20px', background: '#ce3740'}}
-                />
-              </Link>
-              <Link to = '/register' style = {{zIndex: '2'}}>
-                <Iframe url="http://www.youtube.com/embed/xDMP3i36naA"
-                  width="235px"
-                  height="125px"
-                  display="initial"
-                  position="relative"
-                  styles={{border: '1px solid black', borderRadius: '3px', paddingBottom: '20px', background: '#ce3740'}}
+                  styles={{paddingBottom: '20px', background: '#ce3740'}}
                 />
               </Link>
             </Grid.Column>
@@ -111,7 +91,7 @@ class Home extends React.Component {
                   height="125px"
                   display="initial"
                   position="relative"
-                  styles={{border: '1px solid black', borderRadius: '3px', paddingBottom: '20px', background: '#ce3740'}}
+                  styles={{paddingBottom: '20px', background: '#ce3740'}}
                 />
               </Link>
               <Link to = '/register' style = {{zIndex: '2'}}>
@@ -120,7 +100,27 @@ class Home extends React.Component {
                   height="125px"
                   display="initial"
                   position="relative"
-                  styles={{border: '1px solid black', borderRadius: '3px', paddingBottom: '20px', background: '#ce3740'}}
+                  styles={{paddingBottom: '20px', background: '#ce3740'}}
+                />
+              </Link>
+            </Grid.Column>
+            <Grid.Column width={4}>
+              <Link to = '/register' style = {{zIndex: '2'}}>
+                <Iframe url="http://www.youtube.com/embed/xDMP3i36naA"
+                  width="235px"
+                  height="125px"
+                  display="initial"
+                  position="relative"
+                  styles={{paddingBottom: '20px', background: '#ce3740'}}
+                />
+              </Link>
+              <Link to = '/register' style = {{zIndex: '2'}}>
+                <Iframe url="http://www.youtube.com/embed/xDMP3i36naA"
+                  width="235px"
+                  height="125px"
+                  display="initial"
+                  position="relative"
+                  styles={{paddingBottom: '20px', background: '#ce3740'}}
                 />
               </Link>
             </Grid.Column>
@@ -131,7 +131,7 @@ class Home extends React.Component {
                   height="125px"
                   display="initial"
                   position="relative"
-                  styles={{border: '1px solid black', borderRadius: '3px', paddingBottom: '20px', background: '#ce3740'}}
+                  styles={{paddingBottom: '20px', background: '#ce3740'}}
                 />
               </Link>
               <Link to = '/register' style = {{zIndex: '2'}}>
@@ -140,7 +140,7 @@ class Home extends React.Component {
                   height="125px"
                   display="initial"
                   position="relative"
-                  styles={{border: '1px solid black', borderRadius: '3px', paddingBottom: '20px', background: '#ce3740'}}
+                  styles={{paddingBottom: '20px', background: '#ce3740'}}
                 />
               </Link>
             </Grid.Column>
