@@ -19,7 +19,7 @@ class App extends Component {
         <FetchUser>
           <Container>
             <Switch>
-              <ProtectedRoute exact path = '/' component = {Home} />
+              <Route exact path = '/' component = {Home} />
               <Route exact path = '/login' component = {Login} />
               <Route exact path = '/register' component = {Register} />
               <Route exact path = '/reset' component = {Reset} />
