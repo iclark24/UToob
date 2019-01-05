@@ -14,13 +14,16 @@ class Navbar extends React.Component {
           <Menu.Item 
             name="Logout"
             onClick={() => handleLogout(history)}
-          />
+          >
+            <Button style = {{marginBottom: '0px', background: '#ce373e', color: 'white'}}>Log Out</Button>     
+          </Menu.Item>
           <Link to="/newvideo">
             <Menu.Item 
-              name="Upload"
               id="Upload"
               active={pathname === "/newvideo"}
-            />
+            >
+              <Button style = {{marginTop: '0px', background: '#ce373e', color: 'white'}}>Upload</Button>     
+            </Menu.Item>
           </Link>
         </Menu.Menu>
       )

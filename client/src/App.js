@@ -12,6 +12,7 @@ import Reset from './components/Reset';
 import ProtectedRoute from './components/ProtectedRoute';
 import FetchUser from './components/FetchUser';
 import VForm from './components/AddVideoForm'
+import MyVideos_test from './components/MyVideos_test';
 
 class App extends Component {
   render() {
@@ -19,7 +20,7 @@ class App extends Component {
       <div>
         <NavBar />
         <FetchUser>
-          <Container>
+          <Container style = {{background: '#f6f6f6',}}>
             <Switch>
               <Route exact path = '/' component = {Home} />
               <ProtectedRoute exact path = '/newvideo' component = {VForm} />
@@ -27,6 +28,7 @@ class App extends Component {
               <Route exact path = '/register' component = {Register} />
               <Route exact path = '/reset' component = {Reset} />
               <ProtectedRoute exact path = '/CommentForm' component = {CommentForm} />
+              <Route exact path = '/myvideos' component = {MyVideos_test} />
               <Route component = {NoMatch} />
             </Switch>
           </Container>

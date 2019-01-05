@@ -44,6 +44,7 @@ class Login extends React.Component {
           />
           <Link to = '/reset'>Forgot Password</Link>
           <br />
+          <br />
           <Button type = 'submit'>Login</Button>
         </Form>
       </Segment>

@@ -27,10 +27,7 @@ class AddVideoForm extends React.Component{
     }
 
     // watch?v=
-
-
-
-
+    
   render() {
     const { title, genre, description, url} = this.state
     return (

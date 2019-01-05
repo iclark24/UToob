@@ -1,12 +1,14 @@
 import React from "react";
 import axios from "axios";
 import { Segment } from "semantic-ui-react";
+import { Link } from 'react-router-dom';
+import Iframe from 'react-iframe';
 
 class MyVideos_test extends React.Component {
-  state = { videos: [], };
+  state = { videos: [],};
 
   componentDidMount() {
-    axios.get("/api/my_videoss")
+    axios.get("/api/my_videos")
       .then( res => this.setState({ videos: res.data, }));
   }
 
