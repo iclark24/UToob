@@ -1,5 +1,5 @@
 import React from 'react';
-import { Segment, Grid, Header} from 'semantic-ui-react';
+import { Segment, Grid, Header, Divider, Icon} from 'semantic-ui-react';
 import Iframe from 'react-iframe'
 import { Link } from 'react-router-dom';
 import axios from "axios";
@@ -21,11 +21,10 @@ class Home extends React.Component {
         <Grid >
             <Grid.Column width={8}>
               <Iframe url="http://www.youtube.com/embed/xDMP3i36naA"
-                width="515px"
+                width="537px"
                 height="254px"
                 display="initial"
                 position="relative"
-                styles={{border: '1px solid black', borderRadius: '3px'}}
                 allowFullScreen
               >
               </Iframe>
@@ -35,14 +34,14 @@ class Home extends React.Component {
               <Link to = {`/videos/${video.id}`} style = {{zIndex: '2', color: 'black'}}>
                 <Iframe url={video.url}
                   key={video.id}
-                  width="235px"
+                  width="255px"
                   height="125px"
                   display="initial"
                   position="relative"
-                  // styles={{paddingBottom: '20px', background: '#ce3740'}}
                   />
                   <br />
-              <p>{video.title}</p>
+                <p>{video.title}</p>
+                <Divider/>
               </Link>
           </Grid.Column>
               )    

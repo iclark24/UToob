@@ -18,10 +18,10 @@ import Video from './components/Video'
 class App extends Component {
   render() {
     return (
-      <div>
+      <div style = {{background: '#f6f6f6', height: '100vh'}}>
         <NavBar />
         <FetchUser>
-          <Container style = {{background: '#f6f6f6',}}>
+          <Container >
             <Switch>
               <Route exact path = '/' component = {Home} />
               <Route exact path = '/videos/:id' component = {Video} />
