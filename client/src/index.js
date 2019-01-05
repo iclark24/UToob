@@ -4,15 +4,12 @@ import App from './App';
 import { BrowserRouter, } from "react-router-dom";
 import { AuthProvider, } from "./providers/AuthProvider";
 import * as serviceWorker from './serviceWorker';
-import { initMiddleware, } from "devise-axios";
-import "semantic-ui-css/semantic.min.css";
-
-initMiddleware();
+import 'semantic-ui-css/semantic.min.css';
 
 ReactDOM.render(
   <AuthProvider>
     <BrowserRouter>
-      <App /> 
+      <App />
     </BrowserRouter>
   </AuthProvider>,
   document.getElementById('root')

@@ -20,4 +20,9 @@
 .byebug_history
 
 # Ignore master key for decrypting credentials and more.
+<<<<<<< HEAD
 /config/master.key
+=======
+/config/master.key
+/config/database.yml
+>>>>>>> 785347fbf9f66dc9a06d58422d5245693db0f8c5
