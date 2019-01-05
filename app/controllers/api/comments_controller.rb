@@ -2,6 +2,7 @@ class Api::CommentsController < ApplicationController
   before_action :authenticate_user!
   before_action :set_comment, only: [:update, :destroy]
   before_action :set_video
+  before_action :set_user, only: [:create, :update, :destroy]
   
   def index
     render json: Comment.all
