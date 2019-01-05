@@ -14,7 +14,7 @@ class Home extends React.Component {
                 height="250px"
                 display="initial"
                 position="relative"
-                styles={{borderRadius: "50px"}}
+                styles={{border: '4px solid black', borderRadius: '5px'}}
                 allowFullScreen
               />
             </Grid.Column>
@@ -24,6 +24,7 @@ class Home extends React.Component {
                 height="125px"
                 display="initial"
                 position="relative"
+                styles={{border: '4px solid black', borderRadius: '5px'}}
                 allowFullScreen
               />
               <Iframe url="http://www.youtube.com/embed/xDMP3i36naA"
@@ -31,6 +32,7 @@ class Home extends React.Component {
                 height="125px"
                 display="initial"
                 position="relative"
+                styles={{border: '4px solid black', borderRadius: '5px'}}
                 allowFullScreen
               />
             </Grid.Column>
@@ -42,6 +44,7 @@ class Home extends React.Component {
                 height="125px"
                 display="initial"
                 position="relative"
+                styles={{border: '4px solid black', borderRadius: '5px'}}
                 allowFullScreen
               />
               <Iframe url="http://www.youtube.com/embed/xDMP3i36naA"
@@ -49,22 +52,7 @@ class Home extends React.Component {
                 height="125px"
                 display="initial"
                 position="relative"
-                allowFullScreen
-              />
-            </Grid.Column>
-            <Grid.Column width={4}>
-              <Iframe url="http://www.youtube.com/embed/xDMP3i36naA"
-                width="235px"
-                height="125px"
-                display="initial"
-                position="relative"
-                allowFullScreen
-              />
-              <Iframe url="http://www.youtube.com/embed/xDMP3i36naA"
-                width="235px"
-                height="125px"
-                display="initial"
-                position="relative"
+                styles={{border: '4px solid black', borderRadius: '5px'}}
                 allowFullScreen
               />
             </Grid.Column>
@@ -74,6 +62,7 @@ class Home extends React.Component {
                 height="125px"
                 display="initial"
                 position="relative"
+                styles={{border: '4px solid black', borderRadius: '5px'}}
                 allowFullScreen
               />
               <Iframe url="http://www.youtube.com/embed/xDMP3i36naA"
@@ -81,6 +70,25 @@ class Home extends React.Component {
                 height="125px"
                 display="initial"
                 position="relative"
+                styles={{border: '4px solid black', borderRadius: '5px'}}
+                allowFullScreen
+              />
+            </Grid.Column>
+            <Grid.Column width={4}>
+              <Iframe url="http://www.youtube.com/embed/xDMP3i36naA"
+                width="235px"
+                height="125px"
+                display="initial"
+                position="relative"
+                styles={{border: '4px solid black', borderRadius: '5px'}}
+                allowFullScreen
+              />
+              <Iframe url="http://www.youtube.com/embed/xDMP3i36naA"
+                width="235px"
+                height="125px"
+                display="initial"
+                position="relative"
+                styles={{border: '4px solid black', borderRadius: '5px'}}
                 allowFullScreen
               />
             </Grid.Column>
