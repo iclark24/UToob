@@ -10,7 +10,7 @@ class AddVideoForm extends React.Component{
     const video = {...this.state};
     axios.post(`api/videos`, video)
     .then( res => {
-      this.props.history.push(`videos`)
+      this.props.history.push(`/`)
     }) 
   }
 
