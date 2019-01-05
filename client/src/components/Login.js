@@ -22,7 +22,7 @@ class Login extends React.Component {
     const { email, password, } = this.state;
     return (
       <Segment>
-        <Header as = 'h2'>Login</Header>
+        <Header as = 'h2' textAlign = 'center'>Login</Header>
         <Form onSubmit = {this.handleSubmit}>
           <Form.Input 
             autoFocus

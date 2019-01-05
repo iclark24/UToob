@@ -9,3 +9,4 @@ class ApplicationController < ActionController::API
     # binding.pry
     devise_parameter_sanitizer.permit(:sign_up, keys: [:nickname, :email])
   end
+end

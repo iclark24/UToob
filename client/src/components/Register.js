@@ -62,7 +62,7 @@ class Register extends React.Component {
             type = 'password'
             onChange={this.handleChange}
           />
-          <Button type = 'submit'>Login</Button>
+          <Button type = 'submit'>Sign Up</Button>
         </Form>
       </Segment>
     )
